@@ -1,0 +1,59 @@
+body {
+    background-color: #ffffbf;
+    color: #2d3323;
+  }
+  
+  /* Estilos para el contenedor de usuarios y productos */
+  .container {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 100px;
+      flex-direction: column;
+  }
+  
+  /* Estilos para la lista de usuarios */
+  .item-cont{
+  
+    border: solid;
+    border-radius: 10px;
+   height: 30%;
+    padding: 20px 20px 20px;
+  }
+  
+  /* Estilos para los botones */
+  .listButton {
+    background-color: #0061a9;
+    color: #ffffbf;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1b5583;
+  }
+  
+  /* Estilos para los títulos */
+  h2 {
+    color: #536895;
+  }
+  .listados{
+      
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .crearB{
+      background-color: #0061a9;
+      color: #ffffbf;
+      border: none;
+      padding: 5px 10px;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      cursor: pointer;
+  }

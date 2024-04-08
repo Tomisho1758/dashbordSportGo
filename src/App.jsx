@@ -1,20 +1,26 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Route, Routes, Link, BrowserRouter as Router } from "react-router-dom";
 import './App.css'
-import AdminDashboard from './Views/Dashboard/Dashboard.jsx'
-import NotAllow from './Views/NotAllow/NotAllow.jsx'
+import ProductDashboard from './Views/Dashboard/Dashboard.jsx'
+import UserDashboard from './Views/UserDashboard/UserDashboard.jsx';
+import LandingPage from './Views/LandingPage/LandingPage.jsx';
+
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-       
-      <AdminDashboard/> 
-      <NotAllow/>
-    </>
-  )
+    <Router>
+
+    <Routes>
+    <Route path='/' element={<LandingPage />} />
+    <Route path='/productDash' element={<ProductDashboard/>}/> 
+    <Route path='/userDash' element={<UserDashboard/>}/> 
+    
+    
+
+</Routes>
+ </Router> )
 }
 
 export default App
