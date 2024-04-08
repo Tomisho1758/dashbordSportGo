@@ -8,22 +8,24 @@ export default function Orders() {
 
  const { orders, loading } = useOrders();
 
- console.log(orders)
+ 
  
     return (
-       <div>
-        {orders.map(order => (
+        <div>
+          {orders.map(order => (
             <div key={order.id}>
+               <h2>User: {order.userOrder.name}</h2>
+              
               <p>ID: {order.id}</p>
               <p>Status: {order.status}</p>
-              {order.orderP?.map((orderP)=>{
-                <Item id={orderP.id} name={orderP.name}/>
-              })}
-              <p>User: {order.userOrder.name}</p>
+             <h3>orden de compra</h3>
+                {order.orderP.map(product => (
+                  <Item key={product.id}name={product.name}/>
+                ))}
               
-
-
+             
             </div>
-  ))}
-  </div>)
+          ))}
+        </div>
+      )
 }
