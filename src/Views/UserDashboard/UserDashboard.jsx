@@ -3,6 +3,8 @@ import Boton from '../../Components/Atoms/Buttonn';
 import Item from '../../Components/Molecule/Item';
 import axios from 'axios';
 import './UserDashboard';
+import Orders from '../../Components/Molecule/orders/orders';
+
 export default function UserDashboard() {
     const [users, setUsers] = useState([]);
     const fetchUsers = async function(){
@@ -30,7 +32,7 @@ export default function UserDashboard() {
           <Boton name={"Crear Usuario"} classname={"crearB"}/>   
              </div>
        
-        
+        <Orders/>
         </div>
       </div>
       );

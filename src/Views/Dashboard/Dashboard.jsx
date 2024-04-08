@@ -3,8 +3,11 @@
   import axios from 'axios'; 
 import Boton from '../../Components/Atoms/Buttonn.jsx'; 
 import Item from '../../Components/Molecule/Item.jsx';
+import { useCategories } from '../../utils/fetch/useCategories.jsx';
+
+
  function ProductDashboard() {
-    
+    const {category, loading} = useCategories()
     const [products, setProducts] = useState([]);
     
     
@@ -25,14 +28,24 @@ import Item from '../../Components/Molecule/Item.jsx';
       <div className="container"> 
       <h1>Panel de Administrador.</h1>
       <div className='listados'>
-          
+
+      <div className="item-cont">
+        <h2>Categorias  ({category.length})</h2>
+        {category.map(categoria => (
+          <Item key={categoria?.id} name={categoria.name}/>
+        ))}
+      </div>
+
       <div className="item-cont"> 
-        <h2>Productos</h2>
+        <h2>Productos  ({products.length})</h2>
         {products.map(products => (
             <Item key={products?.id}
               name={products.name}/>
           ))}
         <Boton name={"Crear Producto"} classname={"crearB"}/>
+
+
+
         </div>
       </div>
     </div>
