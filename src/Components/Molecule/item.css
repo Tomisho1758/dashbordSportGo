@@ -1,0 +1,26 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 1px;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.btn-cont{
+    display: flex;
+}
+.listButton {
+    background-color: #0061a9;
+    color: #ffffbf;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }

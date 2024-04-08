@@ -12,25 +12,12 @@ body {
 }
 
 /* Estilos para la lista de usuarios */
-.users {
-    border-style: groove;
-    border-radius: 6%;
-    border-color: #1b5583;
-    display: flex;
-    margin-right: 20px;
-    flex-direction: column;
-    align-items: center;
-}
+.item-cont{
 
-/* Estilos para la lista de productos */
-.products {
-    border-style: groove;
-    border-radius: 6%;
-    border-color: #1b5583;
-    display: flex;
-    margin-right: 20px;
-    flex-direction: column;
-    align-items: center;
+  border: solid;
+  border-radius: 10px;
+ height: 30%;
+  padding: 20px 20px 20px;
 }
 
 /* Estilos para los botones */
@@ -54,7 +41,12 @@ h2 {
   color: #536895;
 }
 .listados{
-    display: flex;
+    
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .crearB{
     background-color: #0061a9;
