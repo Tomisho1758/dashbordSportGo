@@ -1,10 +1,12 @@
 .listButton {
-    background-color: #0061a9;
-    color: #ffffbf;
-    border: none;
-    padding: 5px 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
+  color: #d6d9de;
+  font-family: "Poppins", sans-serif;
+  background-color: #1C3F60;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  margin: 15px;
+  font-size: 0.9rem;
   }

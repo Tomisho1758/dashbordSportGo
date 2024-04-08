@@ -28,7 +28,7 @@ import {useNavigate} from "react-router-dom"
       
       <div className="container"> 
       <h1>Panel de Administrador.</h1>
-
+      <a className={"listButton"} href="http://localhost:3000/">Volver a SportGo</a>
       <Boton name={"Usuarios"} classname={"listButton"} handleClick={()=>{navigate("/userDash")}}/>
               <div className='listados'>
 

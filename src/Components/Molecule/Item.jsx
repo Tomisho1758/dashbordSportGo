@@ -4,6 +4,8 @@ import Boton from "../Atoms/Buttonn"
 import "./item.css"
 
 export default function Item({id, name, }) {
+  
+ 
   return (
     <div
     key={id}
@@ -12,7 +14,7 @@ export default function Item({id, name, }) {
         <Texto texto={name}/>
 
         <div className="btn-cont">
-         <Boton name={"Editar"} classname={"listButton"}/>
+         <Boton name={"Editar"} classname={"listButton"} />
              <Boton name={"Borrar"} classname={"listButton"}/>  
              <br></br> 
         </div>
